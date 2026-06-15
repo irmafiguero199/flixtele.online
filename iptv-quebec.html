@@ -21,12 +21,33 @@
     "name": "flixtele IPTV Québec",
     "image": "https://flixtele.online/assets/css/style.css",
     "description": "Le meilleur service IPTV au Québec avec plus de 25 000 chaînes incluant toutes les chaînes françaises canadiennes.",
+    "brand": {
+      "@type": "Brand",
+      "name": "flixtele"
+    },
     "offers": {
       "@type": "Offer",
       "priceCurrency": "CAD",
       "price": "7.50",
       "availability": "https://schema.org/InStock",
-      "url": "https://flixtele.online/iptv-quebec.html"
+      "url": "https://flixtele.online/iptv-quebec.html",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "CAD"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "CA"
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "CA",
+        "returnPolicyCategory": "https://schema.org/NoReturns"
+      }
     },
     "aggregateRating": {
       "@type": "AggregateRating",

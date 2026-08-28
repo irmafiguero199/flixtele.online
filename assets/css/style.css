@@ -1340,7 +1340,7 @@ a:hover {
 .reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: all 0.6s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .reveal.active {
@@ -1794,5 +1794,13 @@ a:hover {
   body {
     background: #fff;
     color: #000;
+  }
+}
+
+/* Scroll Reveal Fallback Fix (Ensures content stays visible if JS fails) */
+@media (scripting: none) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }
